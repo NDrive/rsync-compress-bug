@@ -1,0 +1,8 @@
+server:
+  build: .
+
+ubuntu:
+  build: .
+  links:
+    - server
+  command: bash -c "/test.sh"
